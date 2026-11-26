@@ -1,4 +1,5 @@
 # HackerRank 3rd Semester Portfolio
+**HackerRank Profile:** [jrspandana](https://www.hackerrank.com/profile/jrspandana)
 
 ## Activity 8: Algorithmic Problem-Solving
 
