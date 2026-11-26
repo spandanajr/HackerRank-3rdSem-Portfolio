@@ -1,0 +1,42 @@
+
+import java.util.*;
+
+public class CompareTheTriplets {
+
+    public static List<Integer> compareTriplets(List<Integer> a, List<Integer> b) {
+        int alice = 0;
+        int bob = 0;
+
+        for (int i = 0; i < 3; i++) {
+            if (a.get(i) > b.get(i)) {
+                alice++;
+            } else if (a.get(i) < b.get(i)) {
+                bob++;
+            }
+        }
+
+        List<Integer> result = new ArrayList<>();
+        result.add(alice);
+        result.add(bob);
+
+        return result;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        List<Integer> a = new ArrayList<>();
+        List<Integer> b = new ArrayList<>();
+
+        for (int i = 0; i < 3; i++) {
+            a.add(sc.nextInt());
+        }
+
+        for (int i = 0; i < 3; i++) {
+            b.add(sc.nextInt());
+        }
+
+        System.out.println(compareTriplets(a, b));
+        sc.close();
+    }
+}
